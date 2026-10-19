@@ -86,3 +86,7 @@ h3 {
   outline: 2px solid var(--color-forest);
   outline-offset: 3px;
 }
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
