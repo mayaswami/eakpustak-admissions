@@ -5,6 +5,8 @@ import Programs from "./components/Programs";
 import Highlights from "./components/Highlights";
 import Facilities from "./components/Facilities";
 import AdmissionProcess from "./components/AdmissionProcess";
+import ImportantDates from "./components/ImportantDates";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Highlights />
         <Facilities />
         <AdmissionProcess />
+        <ImportantDates />
       </main>
     </>
   );

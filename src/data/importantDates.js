@@ -1,0 +1,42 @@
+export const importantDates = [
+    {
+        id: "application-open",
+        event: "Applications open",
+        day: "01",
+        month: "October",
+        year: "2026",
+        note: "The online application form goes live.",
+    },
+    {
+        id: "application-deadline",
+        event: "Application deadline",
+        day: "31",
+        month: "December",
+        year: "2026",
+        note: "Last date to submit the online form and documents.",
+    },
+    {
+        id: "assessment",
+        event: "Entrance assessment",
+        day: "16",
+        month: "January",
+        year: "2027",
+        note: "Written test and interaction, held over three days.",
+    },
+    {
+        id: "results",
+        event: "Result announcement",
+        day: "01",
+        month: "February",
+        year: "2027",
+        note: "Results are shared by email and SMS.",
+    },
+    {
+        id: "enrollment-deadline",
+        event: "Enrollment deadline",
+        day: "28",
+        month: "February",
+        year: "2027",
+        note: "Confirm the seat with the admission fee and paperwork.",
+    },
+];
