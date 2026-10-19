@@ -1,0 +1,64 @@
+.highlights {
+  background: var(--color-forest);
+  color: var(--color-cream);
+}
+
+.highlights__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+}
+
+.highlights .eyebrow {
+  margin: 0;
+  color: #c9d8c8;
+}
+
+.highlights h2 {
+  margin: 0.75rem 0 3rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 400;
+  color: var(--color-cream);
+}
+
+/* Mobile: two numbers per row */
+.highlights__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.highlights__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(248, 247, 242, 0.25);
+}
+
+.highlights__value {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1;
+  color: var(--color-cream);
+}
+
+.highlights__label {
+  font-size: 0.95rem;
+  color: #d6e0d3;
+}
+
+/* Desktop: four numbers in one row */
+@media (min-width: 1024px) {
+  .highlights__inner {
+    padding: 6rem 2rem;
+  }
+
+  .highlights__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}

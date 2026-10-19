@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhyChoose from "./components/WhyChoose";
 import Programs from "./components/Programs";
+import Highlights from "./components/Highlights";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <WhyChoose />
         <Programs />
+        <Highlights />
       </main>
     </>
   );
