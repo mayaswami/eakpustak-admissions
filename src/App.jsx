@@ -6,6 +6,7 @@ import Highlights from "./components/Highlights";
 import Facilities from "./components/Facilities";
 import AdmissionProcess from "./components/AdmissionProcess";
 import ImportantDates from "./components/ImportantDates";
+import RequiredDocuments from "./components/RequiredDocuments";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Facilities />
         <AdmissionProcess />
         <ImportantDates />
+        <RequiredDocuments />
       </main>
     </>
   );
