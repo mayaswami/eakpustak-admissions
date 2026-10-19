@@ -1,0 +1,66 @@
+.facilities {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Mobile: 1card per row */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.facility-card {
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.facility-card__category {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: #e8efe6;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-forest);
+}
+
+.facility-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.facility-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+/* Tablet: 2 cards per row */
+@media (min-width: 640px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 4 cards per row, so 8 items make 2 rows */
+@media (min-width: 1024px) {
+  .facilities {
+    padding: 6rem 2rem;
+  }
+
+  .facilities-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

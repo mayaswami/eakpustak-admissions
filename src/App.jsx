@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import WhyChoose from "./components/WhyChoose";
 import Programs from "./components/Programs";
 import Highlights from "./components/Highlights";
+import Facilities from "./components/Facilities";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <WhyChoose />
         <Programs />
         <Highlights />
+        <Facilities />
       </main>
     </>
   );
