@@ -7,7 +7,7 @@ import Facilities from "./components/Facilities";
 import AdmissionProcess from "./components/AdmissionProcess";
 import ImportantDates from "./components/ImportantDates";
 import RequiredDocuments from "./components/RequiredDocuments";
-
+import FeeStructure from "./components/FeeStructure";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <AdmissionProcess />
         <ImportantDates />
         <RequiredDocuments />
+        <FeeStructure />
       </main>
     </>
   );

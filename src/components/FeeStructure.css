@@ -1,0 +1,82 @@
+.fees {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.fees-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.fees-table {
+  width: 100%;
+  min-width: 340px;
+  border-collapse: collapse;
+}
+
+.fees-table caption {
+  padding: 1.25rem 1rem 0;
+  font-size: 0.9rem;
+  text-align: left;
+  color: var(--color-muted);
+}
+
+.fees-table th,
+.fees-table td {
+  padding: 1.25rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.fees-table thead th {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.fees-table tbody th {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-forest);
+}
+
+.fees-table td {
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.fees-table tbody tr:last-child th,
+.fees-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.fees-table tbody tr:hover {
+  background: var(--color-cream);
+}
+
+.fees-note {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* Desktop: more breathing room */
+@media (min-width: 640px) {
+  .fees-table th,
+  .fees-table td {
+    padding: 1.5rem 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fees {
+    padding: 6rem 2rem;
+  }
+}
