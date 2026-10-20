@@ -1,0 +1,66 @@
+.faq {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-item__heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Whole row is the btn, so its easy to tap on phone */
+.faq-item__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.4rem 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-forest);
+}
+
+.faq-item__button:hover {
+  color: var(--color-green);
+}
+
+.faq-item__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-green);
+}
+
+.faq-item__panel p {
+  margin: 0 0 1.5rem;
+  max-width: 44rem;
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+
+@media (min-width: 1024px) {
+  .faq {
+    padding: 6rem 2rem;
+  }
+}

@@ -9,6 +9,7 @@ import ImportantDates from "./components/ImportantDates";
 import RequiredDocuments from "./components/RequiredDocuments";
 import FeeStructure from "./components/FeeStructure";
 import Testimonials from "./components/Testimonials";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <RequiredDocuments />
         <FeeStructure />
         <Testimonials />
+        <Faq />        
       </main>
     </>
   );
