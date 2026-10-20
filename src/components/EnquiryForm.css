@@ -1,0 +1,99 @@
+.enquiry {
+  padding: 4rem 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.enquiry__card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  background: #fff;
+}
+
+.enquiry__card .section-header {
+  margin-bottom: 2rem;
+}
+
+/* Mobile: one field per row */
+.enquiry-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-forest);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #cfd3c8;
+  border-radius: 12px;
+  background: var(--color-cream);
+  color: var(--color-text);
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+  outline: none;
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 3px rgba(73, 107, 83, 0.2);
+}
+
+.enquiry-form__submit {
+  justify-self: start;
+  border: 0;
+}
+
+.enquiry__success h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.enquiry__success p {
+  margin: 0 0 1.75rem;
+  color: var(--color-muted);
+}
+
+.enquiry__reset {
+  background: transparent;
+}
+
+/* Tablet and desktop: 2 fields per row */
+@media (min-width: 640px) {
+  .enquiry__card {
+    padding: 3rem;
+  }
+
+  .enquiry-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .field--full {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .enquiry {
+    padding: 6rem 2rem;
+  }
+}

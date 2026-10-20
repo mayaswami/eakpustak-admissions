@@ -10,6 +10,7 @@ import RequiredDocuments from "./components/RequiredDocuments";
 import FeeStructure from "./components/FeeStructure";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
+import EnquiryForm from "./components/EnquiryForm";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <RequiredDocuments />
         <FeeStructure />
         <Testimonials />
+        <EnquiryForm />
         <Faq />        
       </main>
     </>
