@@ -84,8 +84,9 @@ function EnquiryForm() {
               name="phone"
               type="tel"
               autoComplete="tel"
-              pattern="[0-9]{10}"
-              title="Enter a 10-digit mobile number"
+              placeholder="+91 98765 43210"
+              pattern="(\+91\s?)?[6-9][0-9]{9}"
+              title="Enter a 10-digit mobile number, with or without +91"
               value={form.phone}
               onChange={handleChange}
               required
